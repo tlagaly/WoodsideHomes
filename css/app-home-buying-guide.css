@@ -55,9 +55,9 @@
 	font-weight: 500;
 	font-style: normal;
 }
-body, .tabs-content {
-	color: #666666;
-}
+
+body, .tabs-content {color: #666666; overflow-x: hidden;}
+
 .btn-chat {
 	text-align: center;
 	line-height: 60px;
@@ -1071,7 +1071,7 @@ footer {
 #financing-panel-1 .step-intro.financing .small-4 {
 	height: 180px;
 }
-#financing-panel-1 .step-intro.financing .small-12:nth-child(2), #financing-panel-1 .step-intro.financing .medium-4:nth-child(2), #financing-panel-3 .step-intro .medium-4:nth-child(2), #financing-panel-1 .step-intro.financing .medium-4:nth-child(2), #financing-panel-3 .step-intro .small-12:nth-child(2), #financing-panel-2 .step-intro .small-12:nth-child(2) {
+#financing-panel-1 .step-intro.financing .small-4:nth-child(2), #financing-panel-3 .step-intro .small-4:nth-child(2) {
 	margin-top: 80px;
 	height: auto;
 }
@@ -1183,11 +1183,11 @@ footer {
 	margin-top: 40px;
 	background-color: #e4ecde;
 }
-.credit-restoration .row  #poor-credit-steps, .moving .row .small-3 {
+.credit-restoration .row .small-3, .moving .row .small-3 {
 	background-color: #f6f6f6;
 	width: 180px;
 }
-.credit-restoration .row  #poor-credit-steps .inner-stroke, .moving .row .small-3 .inner-stroke {
+.credit-restoration .row .small-3 .inner-stroke, .moving .row .small-3 .inner-stroke {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-top: dotted 2px #2d2d2d;
@@ -1572,3 +1572,125 @@ a:hover .svg-hover {
   color: #0f0 !important;
   outline: solid #f00 1px !important;
 }
+
+
+/* Custom */
+
+.clear {clear: both;}
+.clear5 {clear: both; height: 5px;}
+.clear10 {clear: both; height: 10px;}
+.clear20 {clear: both; height: 20px;}
+.clear30 {clear: both; height: 30px;}
+.clear40 {clear: both; height: 40px;}
+.clear50 {clear: both; height: 50px;}
+
+.footer {padding-top: 30px; padding-bottom: 80px;}
+.footer, .footer a {color: #999; font-size: 12px;}
+.footer a:hover {color: #0078a0;}
+.footer .border-right {border-right:#999 1px solid;}
+
+#footer ul.list-unstyled {list-style-type: none; margin: 0; padding: 0;}
+#footer ul.list-unstyled.list-inline li {display: inline-block; margin: 0; padding: 0; position: relative;}
+#footer ul.list-unstyled.list-inline li a {margin: 0 8px 0 4px;}
+#footer ul.list-unstyled.list-inline li:after {position: absolute; right: 0; top: 3px; width: 1px; height: 12px; background-color: #999; content: "";}
+#footer ul.list-unstyled.list-inline li:last-child:after {display: none;}
+
+#footer .footer-links a {color: #808080;}
+#footer .footer-info img {float: left; margin-right: 6px; margin-top: -2px;}
+
+.footer-links, .footer-info, .copyrights {padding-left: 20px; padding-right: 20px;} 
+
+.copyrights ul.list-unstyled.list-inline li, .copyrights ul.list-unstyled.list-inline li a {margin-left: 0 !important; padding-left:0 !important;}
+#footer .footer-info {font-size: 10px;}
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {background: transparent !important;}
+
+#navigation {/*overflow: hidden !important;*/}
+#deeplinked-tabs .tabs-title {max-height: 171px !important; /*overflow: hidden;*/}
+.get-started-steps ul {display: block !important;}
+#deeplinked-tabs .tabs-title a {display: block !important; min-height: 39px;}
+#navigation img {height: 39px !important; width: 47px !important; max-width: 47px !important;}
+.step-intro .small-12.columns img {min-width: 400px; height: 250px;}
+.circle-stroke-gray {width: 10px; height: 10px;}
+
+.tabs.small-block-grid-1 .medium-3 {width: 33.3%;}
+.down-arrows-size {height:70px; width:42px;}
+
+#mortgage-payment .mortgage-payment-tile {min-height: 465px;}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 319px) {
+	.hidden-xs {display: none;}	
+	.footer {padding-bottom: 40px;}
+	.introduction .circle {width: 250px !important; height: 250px !important; max-width: 250px !important; max-height: 250px !important; min-width: 250px; min-height: 250px;}
+	#financing-panels .medium-3 {width: 100% !important; float: none !important; display:block !important; clear: both !important; min-width: 100%;}
+	
+	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
+	.calculator-container .flex-row {display: block;}
+	.calculator-container .icon-bubble-plus.columns {display: none;}
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.hidden-xs {display: none;}	
+	.footer {padding-bottom: 40px;}
+	.introduction .circle {width: 250px !important; height: 250px !important; max-width: 250px !important; max-height: 250px !important; min-width: 250px; min-height: 250px;}
+	#financing-panels .medium-3 {width: 100% !important; float: none !important; display:block !important; clear: both !important; min-width: 100%;}
+	
+	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
+	.calculator-container .flex-row {display: block;}
+	.calculator-container .icon-bubble-plus.columns {display: none;}
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+	.hidden-xs {display: none;}	
+	.footer {padding-bottom: 40px;}
+	.introduction .circle {width: 250px !important; height: 250px !important; max-width: 250px !important; max-height: 250px !important; min-width: 250px; min-height: 250px;}
+	#financing-panels .medium-3 {width: 100% !important; float: none !important; display:block !important; clear: both !important; min-width: 100%;}
+
+	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
+	.calculator-container .flex-row {display: block;}
+	.calculator-container .icon-bubble-plus.columns {display: none;}
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+	.introduction .circle {width: 150px !important; height: 150px !important; max-width: 150px !important; max-height: 150px !important; min-width: 150px; min-height: 150px;}
+	#financing-panels .medium-3 {width: 100% !important; float: none !important; display:block !important; clear: both !important; min-width: 100%;}
+
+	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
+	.calculator-container .flex-row {display: block;}
+	.calculator-container .icon-bubble-plus.columns {display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 1003px) {
+	.introduction .circle {width: 200px !important; height: 200px !important; max-width: 200px !important; max-height: 200px !important; min-width: 200px; min-height: 200px;}
+	.team1-size {height: auto !important;}
+	#financing-panels .medium-3 {width: 100% !important; float: none !important; display:block !important; clear: both !important; min-width: 100%;}
+
+	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
+	.calculator-container .flex-row {display: block;}
+	.calculator-container .icon-bubble-plus.columns {display: none;}
+}
+@media screen and (min-width: 1004px) and (max-width: 1259px) {
+	.team1-size {height: 184px !important;}
+	.team1-size .circle {margin: 15% 13% 13% 9%;}
+	
+	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
+	.calculator-container .flex-row {display: block;}
+	.calculator-container .icon-bubble-plus.columns {display: none;}
+}
+@media screen and (min-width: 1260px) and (max-width: 1279px) {
+	.team1-size {height: 184px !important;}
+	.team1-size .circle {margin: 13%;}
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+
+}
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1679px) {
+
+}
+@media screen and (min-width: 1680px) {
+
+}
+
