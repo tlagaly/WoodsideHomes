@@ -1618,7 +1618,42 @@ a:hover .svg-hover {
 
 #mortgage-payment .mortgage-payment-tile {min-height: 465px;}
 
+.help-with-section .button-large-green {max-width: 100%;}
 
+.location-tile-stroke {border: dotted 4px #7aa154;}
+
+.top-bar-main {height: 113px; border-bottom: #ccc 1px solid; padding-left: 20px; padding-right: 20px;}
+.top-bar-main .logo {float: left;}
+.top-bar-main .logo img {margin-top: 27px;}
+.right-nav {float: right;}
+.right-nav .list-unstyled {margin: 0; padding: 0; list-style-type: none;}
+.right-nav .list-unstyled li {display: inline-block; margin: 0; padding: 0; position: relative;}
+.right-nav .list-unstyled li:after {position: absolute; content: ""; right: 0; top:6px; width:1px; height:13px; background-color:#afafaf;}
+.right-nav .list-unstyled li:last-child:after {display: none;}
+.right-nav .list-unstyled li a {margin:0 12px; color: #afafaf; font-size: 0.8125rem; border-bottom: 10px solid #fff; padding-bottom:4px;}
+.right-nav .list-unstyled li:last-child a {margin-right: 0;}
+.right-nav .list-unstyled li a:hover {border-bottom: 10px solid #6d9829;}
+
+.right-nav .social a:hover img {opacity: 0.8;}
+
+.search-main {position: relative;}
+.search-main #search {height: 26px; border:1px solid #cccccc; width: 188px;}
+.homesearch {position: absolute; top: 1px; right: 1px; width: 24px; height: 24px; z-index: 10;}
+.homesearch:hover {background-color: #000; cursor: pointer;}
+.homesearch .fa-fw {color: #cccccc; font-size: 14px;}
+.menu-over-area {margin-top: 34px;}
+.menu-over-area .social {float: right; margin-right: 20px;}
+.menu-over-area .social a {display: inline-block; margin: 0; padding: 0;}
+.menu-over-area .search-main {float: right;}
+
+.small-nav {margin: 0; padding:0; list-style-type: none; position: absolute; top: -89px; right: 0; z-index: 998; display: none;}
+.small-nav li {display: inline-block;}
+.small-nav li:first-child {border-left:1px solid #c4c5c7; border-right:1px solid #c4c5c7; margin-right: -4px;}
+.small-nav li a {line-height: 110px; height: 110px; display: inline-block; width: 80px; text-align: center;}
+.small-nav li a:hover {background-color: #6d9829;}
+.small-nav li a .fa {color: #888888;}
+.small-nav li a .fa-search {color: #6d9829;}
+.small-nav li a:hover .fa {color: #fff;}
 
 /* Responsive */
 
@@ -1631,6 +1666,33 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.help-with-section .small-6 {float: none; display: block; clear: both; width: 100%; min-width:100%;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+		display: none;
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 0;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+			display: none;
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 220px;}
+	.small-nav {display: inline-block;}
+
+	.top-bar-main .logo img {margin-top: 41px; width: 148px;}
+	.small-nav li a {width: 60px;}
+
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	.hidden-xs {display: none;}	
@@ -1641,6 +1703,33 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.help-with-section .small-6 {float: none; display: block; clear: both; width: 100%; min-width:100%;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+		display: none;
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 23px;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+			display: none;
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 220px;}
+	.small-nav {display: inline-block;}
+
+	.top-bar-main .logo img {margin-top: 41px; width: 148px;}
+	.small-nav li a {width: 60px;}
+
 }
 @media screen and (min-width: 480px) and (max-width: 639px) {
 	.hidden-xs {display: none;}	
@@ -1651,6 +1740,32 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.help-with-section .small-6 {float: none; display: block; clear: both; width: 100%; min-width:100%;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+		display: none;
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 23px;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+			display: none;
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 220px;}
+	.small-nav {display: inline-block;}
+
+	.top-bar-main .logo img {margin-top: 33px; width: 249px;}
+
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
 	.introduction .circle {width: 150px !important; height: 150px !important; max-width: 150px !important; max-height: 150px !important; min-width: 150px; min-height: 150px;}
@@ -1659,6 +1774,28 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+		display: none;
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 23px;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+			display: none;
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 140px;}
+	.small-nav {display: inline-block;}
+
 }
 @media screen and (min-width: 768px) and (max-width: 1003px) {
 	.introduction .circle {width: 200px !important; height: 200px !important; max-width: 200px !important; max-height: 200px !important; min-width: 200px; min-height: 200px;}
@@ -1668,6 +1805,33 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+
+		display: none;
+
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 23px;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+	
+		display: none;
+
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 140px;}
+	.small-nav {display: inline-block;}
+
+
 }
 @media screen and (min-width: 1004px) and (max-width: 1259px) {
 	.team1-size {height: 184px !important;}
@@ -1689,8 +1853,12 @@ a:hover .svg-hover {
 }
 @media screen and (min-width: 1600px) and (max-width: 1679px) {
 
+	.top-bar-main {padding-left: 180px; padding-right: 180px;}
+
 }
 @media screen and (min-width: 1680px) {
+
+	.top-bar-main {padding-left: 180px; padding-right: 180px;}
 
 }
 
