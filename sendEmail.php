@@ -23,7 +23,7 @@ $mail->addAddress("hello@haptic.is", "Woodside Homes");
 //$mail->addAddress("recepient1@example.com"); //Recipient name is optional
 
 //Address to which recipient will reply
-$mail->addReplyTo($yourEmail, "Reply");
+$mail->addReplyTo($ssEmail, "Reply");
 
 //CC and BCC
 //$mail->addCC("cc@example.com");
