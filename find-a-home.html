@@ -40,14 +40,14 @@
         </div>
       </div>
       
-      <form>
+      <form action="sendEmail.php" method="post" name="ssForm">
         <div class="row">
-          <div class="small-6 columns"><input type="text" placeholder="First name"></div>
-          <div class="small-6 columns"><input type="text" placeholder="Last name"></div>
-          <div class="small-6 columns"><input type="text" placeholder="Email address"></div>
-          <div class="small-6 columns"><input type="text" placeholder="Phone number"></div>
+          <div class="small-6 columns"><input type="text" placeholder="First name" name="ssName"></div>
+          <div class="small-6 columns"><input type="text" placeholder="Last name" name="ssLastName"></div>
+          <div class="small-6 columns"><input type="text" placeholder="Email address" name="ssEmail"></div>
+          <div class="small-6 columns"><input type="text" placeholder="Phone number" name="ssPhone"></div>
           <div class="small-12 columns">
-            <select>
+            <select name="ssMetroArea">
               <option value="husker">Select Metro Area</option>
               <option value="starbuck">Starbuck</option>
               <option value="hotdog">Hot Dog</option>
@@ -55,7 +55,7 @@
             </select>
           </div>
           <div class="small-12 columns">
-            <select>
+            <select name="ssCommunity">
               <option value="husker">Select Community</option>
               <option value="starbuck">Starbuck</option>
               <option value="hotdog">Hot Dog</option>
@@ -63,7 +63,7 @@
             </select>
           </div>
           <div class="small-12 columns">
-            <select>
+            <select name="ssModel">
               <option value="husker">Select Model</option>
               <option value="starbuck">Starbuck</option>
               <option value="hotdog">Hot Dog</option>
@@ -71,13 +71,13 @@
             </select>
           </div>
           <div class="small-12 columns">
-            <textarea placeholder="Send us a message!"></textarea>
+            <textarea placeholder="Send us a message!" name="ssMessage"></textarea>
           </div>
           <div class="small-12 columns">
             <p>By signing up you will receive email newsletters, account updat es, and requested information from Woodside Homes. Privacy Policy.</p>
           </div>
           <div class="small-12 columns text-center">
-            <a href="#" class="button" aria-controls="schedule-consultation-modal" aria-haspopup="true" tabindex="0"><span class="inner-stroke">Schedule</span></a>
+            <a href="javascript: document.ssForm.submit()" class="button" aria-controls="schedule-consultation-modal" aria-haspopup="true" tabindex="0"><span class="inner-stroke">Schedule</span></a>
           </div>
         </div>
       </form>
