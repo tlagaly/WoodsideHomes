@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/app-home-buying-guide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   </head>
 
@@ -36,57 +37,56 @@
       </button>
     </div>
 
-    <!-- FIXED NAVIGATION BAR -->
-    <div class="top-bar foundation-5-top-bar">
 
-      <div class="top-bar-title">
-        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle></button>
-        </span>
-        <img src="img/logo.png">
-      </div>
 
-      <div id="responsive-menu">
-        <div class="top-bar-left hover-underline-menu">
-
-          <ul class="dropdown vertical medium-horizontal menu align-center" data-responsive-menu="drilldown medium-dropdown" data-auto-height="true" data-animate-height="true">
-            <li>
-              <a href="#">Find your new home</a>
-              <ul class="menu">
-                <li><a href="#">Arizona</a></li>
-                <li>
-                  <a href="#">California</a>
-                  <ul class="menu">
-                    <li><a href="#">Central Valley</a></li>
-                    <li><a href="#">Northern California - Sacremento / East Bay</a></li>
-                    <li><a href="#">Southern California - Inland Empire</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Nevada</a></li>
-                <li><a href="#">Texas</a></li>
-                <li><a href="#">Utah</a></li>
-              </ul>
-            </li>
-            <li><a href="#home-buying-guide.html">Home buying guide</a></li>
-            <li><a href="#">Better by design</a></li>
-            <li>
-              <a href="#">About us</a>
-                <ul class="menu">
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">News</a></li>
-                </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
-        </div>
-      </div>
+<div class="top-bar-main">
+      
+    <div class="logo">
+      <a href="#"><img src="img/logo.png"></a>
     </div>
-    <!-- FIXED NAVIGATION BAR END -->
+
+    <div class="right-nav">
+
+      <ul class="small-nav">
+        <li><a href="#" class="trigger-srch"><i class="fa fa-search fa-flip-horizontal fa-fw"></i></a></li>
+        <li><a href="#" class="trigger-nav"><i class="fa fa-bars fa-fw"></i></a></li>
+      </ul>
+      
+      <div class="menu-over-area">
+
+        <div class="search-main">
+            <form action="/search">
+              <input type="search" name="q" id="search" value="" placeholder="Search">
+              <button type="submit" class="homesearch"><i class="fa fa-search fa-flip-horizontal fa-fw"></i></button>
+            </form>        
+        </div>
+
+        <div class="social">
+          <a href="https://www.facebook.com/WoodsideHomes?fref=ts"><img src="img/FB.png"></a>
+          <a href="https://instagram.com/woodsidehomesusa/"><img src="img/ig.png"></a>
+          <a href="https://www.pinterest.com/woodsidehomes/"><img src="img/pt.png"></a>
+          <a href="https://twitter.com/WoodsideHomes"><img src="img/tw.png"></a>
+        </div>
+
+      </div>
+
+      <div class="clear"></div>
+
+      <ul class="list-unstyled">
+        <li><a href="#" class="drop-home">FIND YOUR NEW HOME</a></li>
+        <li><a href="http://www.woodsidehomes.com/home-buying-guide">HOME BUYING GUIDE</a></li>
+        <li><a href="http://www.woodsidehomes.com/design-center">BETTER BY DESIGN</a></li>
+        <li><a href="#" class="drop-about">ABOUT US</a></li>
+        <li><a href="http://www.woodsidehomes.com/heretohelpyouhome">BLOG</a></li>
+      </ul>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+
+
+
     
     <div class="main-box-border">
 
@@ -307,10 +307,12 @@
       </div>
     <!-- STEPS END END -->
     </div>
-    <!-- FOOTER -->
-    <footer>
-      <div class="row">
-        <div class="large-3 columns" style="border-right:#999 1px solid;">
+    
+
+        <!-- FOOTER -->
+    <footer id="footer">
+      <div class="row footer">
+        <div class="large-3 columns border-right">
           <div style="padding:20px; color:#999;">
             WOODSIDE HOMES<br>
             460 West 50 North, Suite 200<br>
@@ -318,7 +320,7 @@
             <a href="tel:801-869-3950" class="footerphone">801.869.3950</a>
           </div>
         </div>
-        <div class="large-5 columns" style="border-right:#999 1px solid; height:115px;">
+        <div class="large-5 columns border-right" style="height:115px;">
           <div style="padding:20px; color:#999;">
             <div style="float:left; margin: 0 20px 0 0; ">
               <ul style="list-style-type: none; font-size:12px; margin:0; padding:0 0 0 15px; color:#999;">
@@ -357,7 +359,52 @@
               </ul>
               </div>
           </div>
+
+
+          <div class="">
+            <div class="12-large columns">
+
+
+              <div class="clear"></div>
+
+              <div class="text-center footer-links">
+                <ul class="list-unstyled list-inline">
+                  <li><a href="http://www.woodsidehomes.com/arizona">Phoenix Arizona</a></li>
+                  <li><a href="http://www.woodsidehomes.com/centralcal">Central Valley California</a></li>
+                  <li><a href="http://www.woodsidehomes.com/norcal">Northern California</a></li>
+                  <li><a href="http://www.woodsidehomes.com/socal">Southern California</a></li>
+                  <li><a href="http://www.woodsidehomes.com/nevada">Las Vegas Nevada</a></li>
+                  <li><a href="http://www.woodsidehomes.com/texas">San Antonio Texas</a></li>
+                  <li><a href="http://www.woodsidehomes.com/utah">Salt Lake Utah</a></li>
+                </ul>
+              </div>
+
+              <div class="clear20"></div>
+
+              <div class="footer-info">
+              <img src="img/2015EqualHousingLogo.jpg">Woodside Homes' 30-year mission statement is "Value, Integrity, Quality and Service." As we maintain our mission, we also reserve the right to modify or change: floor plans, materials, features, prices and information without notice or obligation. All floor plans, elevations, dimensions, square footages, and maps are approximates and artist renderings and may not be to scale. See Sales Consultant for additional information.
+              </div>
+
+              <div class="clear10"></div>
+
+              <div class="copyrights">
+                
+                <div>© Copyright 2017 Woodside Homes, All Rights Reserved.</div>
+                
+                <ul class="list-unstyled list-inline">
+                  <li><a href="http://www.woodsidehomes.com/disclaimers">Terms of Use</a></li>
+                  <li><a href="http://www.woodsidehomes.com/privacy">Privacy</a></li>
+                  <li><a href="http://www.woodsidehomes.com/site-map">Site Map</a></li>
+                </ul>
+
+              </div>
+
+
+            </div>
+          </div>
+
       </div>
+
     </footer>
     <!-- FOOTER END -->
 

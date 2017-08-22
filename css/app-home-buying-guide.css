@@ -1618,6 +1618,68 @@ a:hover .svg-hover {
 
 #mortgage-payment .mortgage-payment-tile {min-height: 465px;}
 
+.help-with-section .button-large-green {max-width: 100%;}
+
+.location-tile-stroke {border: dotted 4px #7aa154;}
+
+.top-bar-main {height: 113px; border-bottom: #ccc 1px solid; padding-left: 20px; padding-right: 20px;}
+.top-bar-main .logo {float: left;}
+.top-bar-main .logo img {margin-top: 27px;}
+.right-nav {float: right;}
+.right-nav .list-unstyled {margin: 0; padding: 0; list-style-type: none;}
+.right-nav .list-unstyled li {display: inline-block; margin: 0; padding: 0; position: relative;}
+.right-nav .list-unstyled li:after {position: absolute; content: ""; right: 0; top:6px; width:1px; height:13px; background-color:#afafaf;}
+.right-nav .list-unstyled li:last-child:after {display: none;}
+.right-nav .list-unstyled li a {margin:0 12px; color: #afafaf; font-size: 0.8125rem; border-bottom: 10px solid #fff; padding-bottom:4px;}
+.right-nav .list-unstyled li:last-child a {margin-right: 0;}
+.right-nav .list-unstyled li a:hover {border-bottom: 10px solid #6d9829;}
+
+.right-nav .social a:hover img {opacity: 0.8;}
+
+.search-main {position: relative;}
+.search-main #search {height: 26px; border:1px solid #cccccc; width: 188px;}
+.homesearch {position: absolute; top: 1px; right: 1px; width: 24px; height: 24px; z-index: 10;}
+.homesearch:hover {background-color: #000; cursor: pointer;}
+.homesearch .fa-fw {color: #cccccc; font-size: 14px;}
+.menu-over-area {margin-top: 34px;}
+.menu-over-area .social {float: right; margin-right: 20px;}
+.menu-over-area .social a {display: inline-block; margin: 0; padding: 0;}
+.menu-over-area .search-main {float: right;}
+
+.small-nav {margin: 0; padding:0; list-style-type: none; position: absolute; top: -89px; right: 0; z-index: 998; display: none;}
+.small-nav li {display: inline-block;}
+.small-nav li:first-child {border-left:1px solid #c4c5c7; border-right:1px solid #c4c5c7; margin-right: -4px;}
+.small-nav li a {line-height: 110px; height: 110px; display: inline-block; width: 80px; text-align: center;}
+.small-nav li a:hover {background-color: #6d9829;}
+.small-nav li a .fa {color: #888888;}
+.small-nav li a .fa-search {color: #6d9829;}
+.small-nav li a:hover .fa {color: #fff;}
+
+/*sticky navigation*/
+.stick-top {position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 998;}
+.tabs.small-block-grid-1 .medium-3 {width: 25%;}
+#mortgage-payment .small-12 .arrow-four-columns {max-width: 98%; left: 14px;}
+.mortgage-payment-tile {text-align: center;}
+.financing-panel h1 {font-size: 2rem; line-height: 2rem;}
+.mortgage-calculator {display: block; width: 100%}
+
+.reveal-overlay .reveal {background-color: #fff; border: 26px solid #7aa154;}
+.reveal-overlay .reveal input, 
+.reveal-overlay .reveal textarea, 
+.reveal-overlay .reveal select
+{border: 2px solid #ccc; background-color:#f4f4f4; box-shadow: none;}
+
+.reveal .button, .reveal .button {text-transform: uppercase; font-family: 'PillGothic600mg-Bold'; padding: 20px 6px; margin-top: 20px; background-color: #99999b; color: #fff;}
+.reveal .inner-stroke {border: solid 2px #fff; padding: 12px;}
+.reveal .button {margin-bottom: 40px;}
+
+.text-center {text-align: center;}
+
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+.responsive-buttons .button-large-green {display: inline-block; width: 260px; max-width: 260px;}
+
+.step-intro .small-12.columns img {min-width: 250px; height: 250px;}
 
 
 /* Responsive */
@@ -1631,6 +1693,38 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.help-with-section .small-6 {float: none; display: block; clear: both; width: 100%; min-width:100%;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+		display: none;
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 0;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+			display: none;
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 220px;}
+	.small-nav {display: inline-block;}
+
+	.top-bar-main .logo img {margin-top: 41px; width: 148px;}
+	.small-nav li a {width: 60px;}
+
+	.responsive-buttons .text-right {text-align: center; display: block; float: none; width: 100%;}
+	.responsive-buttons .text-left {text-align: center; display: block; float: none; width: 100%;}
+	.responsive-buttons .button-large-green {display: block; width: 100%; max-width: 100%;}
+	
+	.credit-restoration-copy {height:auto;}
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	.hidden-xs {display: none;}	
@@ -1641,6 +1735,37 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.help-with-section .small-6 {float: none; display: block; clear: both; width: 100%; min-width:100%;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+		display: none;
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 23px;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+			display: none;
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 220px;}
+	.small-nav {display: inline-block;}
+
+	.top-bar-main .logo img {margin-top: 41px; width: 148px;}
+	.small-nav li a {width: 60px;}
+
+	.responsive-buttons .text-right {text-align: center; display: block; float: none; width: 100%;}
+	.responsive-buttons .text-left {text-align: center; display: block; float: none; width: 100%;}
+	.responsive-buttons .button-large-green {display: block; width: 100%; max-width: 100%;}
+	.credit-restoration-copy {height:auto;}
 }
 @media screen and (min-width: 480px) and (max-width: 639px) {
 	.hidden-xs {display: none;}	
@@ -1651,6 +1776,37 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.help-with-section .small-6 {float: none; display: block; clear: both; width: 100%; min-width:100%;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+		display: none;
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 23px;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+			display: none;
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 220px;}
+	.small-nav {display: inline-block;}
+
+	.top-bar-main .logo img {margin-top: 33px; width: 249px;}
+
+	.responsive-buttons .text-right {text-align: center; display: block; float: none; width: 100%;}
+	.responsive-buttons .text-left {text-align: center; display: block; float: none; width: 100%;}
+	.responsive-buttons .button-large-green {display: block; width: 100%; max-width: 100%;}
+
+	.credit-restoration-copy {height:auto;}
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
 	.introduction .circle {width: 150px !important; height: 150px !important; max-width: 150px !important; max-height: 150px !important; min-width: 150px; min-height: 150px;}
@@ -1659,6 +1815,30 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+		display: none;
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 23px;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+			display: none;
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 140px;}
+	.small-nav {display: inline-block;}
+
+	.get-started-steps .tabs .medium-3 {width: 50%;}
+
 }
 @media screen and (min-width: 768px) and (max-width: 1003px) {
 	.introduction .circle {width: 200px !important; height: 200px !important; max-width: 200px !important; max-height: 200px !important; min-width: 200px; min-height: 200px;}
@@ -1668,6 +1848,34 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.financing-panel-text .small-6 {width: 100%; display: block; float: none; clear: both;}
+
+	.menu-over-area .social {display: none;}
+	.menu-over-area .search-main {float: none; background-color: #78a22f; width: 100%; width:100%; padding:20px 20px 10px 20px; 
+
+		display: none;
+
+	}
+	.homesearch {top: 21px; right: 21px;}
+	.menu-over-area {margin-top: 23px;}
+	.right-nav {float: none; position: absolute; width: 100%; left: 0; right: 0; top: 90px; z-index: 998; z-index: 10;}
+	.search-main #search {width: 100%;}
+	.right-nav .list-unstyled {position: absolute; top: 23px; left: -12px; right: 0; background-color: #000; z-index: 20; 
+	
+		display: none;
+
+	}
+	.right-nav .list-unstyled li {clear: both; text-align: center; width: 100%; display: block;}
+	.right-nav .list-unstyled li a {width: 100%; display: block; border-bottom: 0; padding:10px 0; background-color: #555555; margin-bottom:1px; color: #fff;}
+	.right-nav .list-unstyled li a:hover {border-bottom:0; background-color: #78a23e;}
+
+	.top-bar-main {background-color :#e0e1e3;}
+	.hero-section-text {margin-top: 140px;}
+	.small-nav {display: inline-block;}
+
+	.get-started-steps .tabs .medium-3 {width: 50%;}
+	.btn-chat {right: 46%;}
 }
 @media screen and (min-width: 1004px) and (max-width: 1259px) {
 	.team1-size {height: 184px !important;}
@@ -1676,10 +1884,13 @@ a:hover .svg-hover {
 	.calculator-container .columns {width: 100%; display: block; clear: both; float: none; min-width: 100%;}
 	.calculator-container .flex-row {display: block;}
 	.calculator-container .icon-bubble-plus.columns {display: none;}
+
+	.get-started-steps .tabs .medium-3 {width: 50%;}
 }
 @media screen and (min-width: 1260px) and (max-width: 1279px) {
 	.team1-size {height: 184px !important;}
 	.team1-size .circle {margin: 13%;}
+	.btn-chat {right: 47.6%;}
 }
 @media screen and (min-width: 1280px) and (max-width: 1365px) {
 
@@ -1689,8 +1900,84 @@ a:hover .svg-hover {
 }
 @media screen and (min-width: 1600px) and (max-width: 1679px) {
 
-}
-@media screen and (min-width: 1680px) {
+	.top-bar-main {padding-left: 180px; padding-right: 180px;}
 
 }
+@media screen and (min-width: 1680px) {
+	.top-bar-main {padding-left: 180px; padding-right: 180px;}
+}
+
+/*sticky navigation only above ipad
+below and at ipad following applies
+*/
+@media screen and (max-width: 1024px) {
+	.stick-top {position: static; top: inherit; left: inherit; right: inherit; width: inherit; z-index: inherit;}
+
+	/*hide svg lines and arrows*/
+	.arrow-step-intro, 
+	.stroke-step-intro, 
+	#location-tiles .medium-6:before,
+	.arrow-down-two-into-1,
+	.stroke-circle-bottom-1:before,
+	.stroke-solid-bottom, 
+	.circle-stroke-gray
+	{display: none;}
+
+	.tabs-content {margin-top: 30px;}
+	#location-tiles .medium-6 {margin-bottom: 30px;}
+	.return-home {margin-top: 30px;}
+
+	.mortgage-calculator-wrapper {text-align:center; width: 100%;}
+	.mortgage-calculator {display: inline-block !important; padding:0 60px; width: auto; margin: 0 auto;}
+	.mortgage-calculator label {text-align: left;}
+	.small-4.columns.empty {display: none;}
+	.small-4.columns.empty .arrow-90-degrees-left {display: none;}
+	.responsive-full {display: block; float: none; width: 100%; text-align: center;}
+	#mortgage-calculator .stroke-green-72 {display: none;}
+	#mortgage-payment .mortgage-payment-tile {min-height: 100%;}
+	#financing-panels li {margin-bottom: 20px;}
+	#financing-panel-1 .step-intro.financing .small-4:nth-child(2), #financing-panel-3 .step-intro .small-4:nth-child(2) {
+    margin-top: 0px;}
+    #mortgage-payment .large-3 {margin-bottom: 20px;}
+    .hide-sm {display: none;}
+
+    form .small-6.columns {width: 100% !important; float: none; display: block; clear: both;}
+    .hide-for-small-only {display: none;}
+
+    .consultation .photo {float: none; width: 100%; width:100%; clear: both;}
+    .consultation .home-team {float: none; width: 100%; width:100%; clear: both;}
+    .consultation .end {float: none; width: 100%; width:100%; clear: both;}
+    .consultation div div .columns:nth-child(2) {padding: 20px; text-align: center;}
+	.stroke-green-72, .arrow-one-into-three, .arrow-large-down-green {display: none;}
+    #benefits-new-home-panels {margin-top: 20px;}
+
+	/*.medium-3 {float: none !important; width: 100% !important; clear: both !important; display: block !important;}
+	.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {float: none; clear: both; display: block;}*/
+	.benefits-new-home .tabs-title, 
+	#home-buying-panels .tabs-title 
+	{float: none !important; width: 100% !important; clear: both !important; display: block !important; margin-bottom: 20px;}
+	.benefits-new-home .row ul.tabs, 
+	#home-buying-panels .tabs-title, 
+	.tabs-panel .row ul.tabs
+	{display: block !important;}
+
+	.row .impact {margin: 0; width: 100%;}
+
+	.style-by-design:before, .style-by-design .flex .small-3:before {display: none;}
+
+	.style-by-design .small-6, .style-by-design .small-12 {width: 100%; float: none; clear: both; display: table !important;}
+	.style-by-design .inner-box .green-box.end {display: block !important;}
+	.style-by-design .small-offset-3 {margin: 0;}
+	.style-by-design .ostrich {font-size: 5rem;}
+
+	.gallery-area {display: table; margin-top: 20px;}
+	.gallery-area .small-3, .gallery-area .small-6, .gallery-area .small-12 {width: 100%; float: none; clear: both; display: table !important; text-align: center;}
+	.style-by-design .svg {width: auto;}
+	
+	.style-by-design .button-large-green {margin-top: 20px;}
+	
+	.small-responsive {clear: both; max-width: 200px; display: inline-block;}
+	.full-at-small {clear: both; width: 100%; float: none; text-align: center;}
+}
+
 

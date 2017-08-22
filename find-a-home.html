@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/app.css">
     <link href="aos/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app-home-buying-guide.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     
     <script src="https://use.fontawesome.com/4eabe4131b.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
@@ -38,14 +40,14 @@
         </div>
       </div>
       
-      <form>
+      <form action="sendEmail.php" method="post" name="ssForm">
         <div class="row">
-          <div class="small-6 columns"><input type="text" placeholder="First name"></div>
-          <div class="small-6 columns"><input type="text" placeholder="Last name"></div>
-          <div class="small-6 columns"><input type="text" placeholder="Email address"></div>
-          <div class="small-6 columns"><input type="text" placeholder="Phone number"></div>
+          <div class="small-6 columns"><input type="text" placeholder="First name" name="ssName"></div>
+          <div class="small-6 columns"><input type="text" placeholder="Last name" name="ssLastName"></div>
+          <div class="small-6 columns"><input type="text" placeholder="Email address" name="ssEmail"></div>
+          <div class="small-6 columns"><input type="text" placeholder="Phone number" name="ssPhone"></div>
           <div class="small-12 columns">
-            <select>
+            <select name="ssMetroArea">
               <option value="husker">Select Metro Area</option>
               <option value="starbuck">Starbuck</option>
               <option value="hotdog">Hot Dog</option>
@@ -53,7 +55,7 @@
             </select>
           </div>
           <div class="small-12 columns">
-            <select>
+            <select name="ssCommunity">
               <option value="husker">Select Community</option>
               <option value="starbuck">Starbuck</option>
               <option value="hotdog">Hot Dog</option>
@@ -61,7 +63,7 @@
             </select>
           </div>
           <div class="small-12 columns">
-            <select>
+            <select name="ssModel">
               <option value="husker">Select Model</option>
               <option value="starbuck">Starbuck</option>
               <option value="hotdog">Hot Dog</option>
@@ -69,13 +71,13 @@
             </select>
           </div>
           <div class="small-12 columns">
-            <textarea placeholder="Send us a message!"></textarea>
+            <textarea placeholder="Send us a message!" name="ssMessage"></textarea>
           </div>
           <div class="small-12 columns">
             <p>By signing up you will receive email newsletters, account updat es, and requested information from Woodside Homes. Privacy Policy.</p>
           </div>
-          <div class="small-12 columns">
-            <a href="#" class="button" aria-controls="schedule-consultation-modal" aria-haspopup="true" tabindex="0"><span class="inner-stroke">Schedule</span></a>
+          <div class="small-12 columns text-center">
+            <a href="javascript: document.ssForm.submit()" class="button" aria-controls="schedule-consultation-modal" aria-haspopup="true" tabindex="0"><span class="inner-stroke">Schedule</span></a>
           </div>
         </div>
       </form>
@@ -88,7 +90,7 @@
     </a>
 
     <!-- TEMP NAVIGATION BAR -->
-    <div class="top-bar foundation-5-top-bar" id="nav">
+<!--     <div class="top-bar foundation-5-top-bar" id="nav">
 
       <div class="top-bar-title">
         <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
@@ -136,8 +138,72 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- TEMP NAVIGATION BAR END -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-bar-main">
+      
+    <div class="logo">
+      <a href="#"><img src="img/logo.png"></a>
+    </div>
+
+    <div class="right-nav">
+
+      <ul class="small-nav">
+        <li><a href="#" class="trigger-srch"><i class="fa fa-search fa-flip-horizontal fa-fw"></i></a></li>
+        <li><a href="#" class="trigger-nav"><i class="fa fa-bars fa-fw"></i></a></li>
+      </ul>
+      
+      <div class="menu-over-area">
+
+        <div class="search-main">
+            <form action="/search">
+              <input type="search" name="q" id="search" value="" placeholder="Search">
+              <button type="submit" class="homesearch"><i class="fa fa-search fa-flip-horizontal fa-fw"></i></button>
+            </form>        
+        </div>
+
+        <div class="social">
+          <a href="https://www.facebook.com/WoodsideHomes?fref=ts"><img src="img/FB.png"></a>
+          <a href="https://instagram.com/woodsidehomesusa/"><img src="img/ig.png"></a>
+          <a href="https://www.pinterest.com/woodsidehomes/"><img src="img/pt.png"></a>
+          <a href="https://twitter.com/WoodsideHomes"><img src="img/tw.png"></a>
+        </div>
+
+      </div>
+
+      <div class="clear"></div>
+
+      <ul class="list-unstyled">
+        <li><a href="#" class="drop-home">FIND YOUR NEW HOME</a></li>
+        <li><a href="http://www.woodsidehomes.com/home-buying-guide">HOME BUYING GUIDE</a></li>
+        <li><a href="http://www.woodsidehomes.com/design-center">BETTER BY DESIGN</a></li>
+        <li><a href="#" class="drop-about">ABOUT US</a></li>
+        <li><a href="http://www.woodsidehomes.com/heretohelpyouhome">BLOG</a></li>
+      </ul>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+
+
+
+
+
+
+
+
 
     <!-- FIXED SUBNAV -->
     <div data-sticky-container id="navigation">
@@ -614,7 +680,7 @@
               <div class="small-4 columns empty">
                 <img class="arrow-90-degrees-left" src="img/svg/arrow_90_degrees_left.svg">
               </div>
-              <div class="small-4 columns">
+              <div class="small-4 columns responsive-full">
                 <span>
                   <h1>Mortgage Calculator</h1>
                   <span class="green-subheadline">
@@ -641,8 +707,9 @@
               
               <!-- MORTGAGE CALCULATOR -->
 
-              <div class="small-12 mortgage-calculator aos-init aos-animate" data-aos="zoom-in" data-aos-delay="0" data-aos-anchor-placement="top-center" data-aos-duration="600">
+              <div class="small-12 mortgage-calculator-wrapper aos-init aos-animate" data-aos="zoom-in" data-aos-delay="0" data-aos-anchor-placement="top-center" data-aos-duration="600">
                 
+              <div class="mortgage-calculator">
                 <div class="calculator-container">
 
                   <div class="calculator-container">
@@ -702,6 +769,8 @@
                   <div class="small-12 columns text-center estimated-payment">Estimated Monthly Payment</div>
                   <div class="small-12 columns text-center monthly-payment">$2,345.67</div>
                 
+                </div>
+
                 </div>
 
               </div>
@@ -833,15 +902,15 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row hide-sm">
                 <div class="small-12 columns">
                   <img src="img/svg/arrow_one_to_two.svg">
                 </div>
               </div>
 
-              <div class="row help-with-tabs">
+              <div class="row help-with-section responsive-buttons">
 
-                <div class="small-6 columns text-center">
+                <div class="small-6 columns text-right">
                   <a href="#financing-panel-2" class="button button-large-green" onclick="$('#financing-panels a[href=\'#financing-panel-2\']').click()">
                     <span class="inner-stroke">
                       <h3>Help With</h3><h1>Credit Scores</h1>
@@ -849,7 +918,7 @@
                   </a>
                 </div>
 
-                <div class="small-6 columns text-center">
+                <div class="small-6 columns text-left">
                   <a href="#financing-panel-3" class="button button-large-green" onclick="$('#financing-panels a[href=\'#financing-panel-3\']').click()">
                     <span class="inner-stroke">
                       <h3>Help Me Understand</h3><h1>Types of Mortgages</h1>
@@ -1043,7 +1112,9 @@
                     </div>
                     <div class="small-6 columns end">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                      <div>
                       <a data-open="schedule-consultation-modal" class="button" aria-controls="schedule-consultation-modal" aria-haspopup="true" tabindex="0"><span class="inner-stroke">Schedule Consult</span></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1085,9 +1156,9 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row responsive-buttons">
 
-                <div class="small-3 columns text-center small-offset-3">
+                <div class="small-6 columns text-right">
                   <a href="#financing-panel-1" class="button button-large-green" onclick="$('#financing-panels a[href=\'#financing-panel-1\']').click()">
                     <span class="inner-stroke">
                       <h3>How Much</h3><h1>Can I Afford?</h1>
@@ -1095,7 +1166,7 @@
                   </a>
                 </div>
 
-                <div class="small-3 columns text-center">
+                <div class="small-6 columns text-left">
                   <a href="#financing-panel-3" class="button button-large-green" onclick="$('#financing-panels a[href=\'#financing-panel-3\']').click()">
                     <span class="inner-stroke">
                       <h3>Help Me Understand</h3><h1>Types of Mortgages</h1>
@@ -1250,7 +1321,9 @@
                       </div>
                       <div class="small-6 columns end">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                        <div>
                         <a data-open="schedule-consultation-modal" class="button"><span class="inner-stroke">Schedule Consult</span></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1286,15 +1359,15 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row hide-sm">
                   <div class="small-12 columns">
                     <img src="img/svg/arrow_one_to_two.svg">
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row responsive-buttons">
 
-                  <div class="small-3 columns text-center small-offset-3">
+                  <div class="small-6 columns text-right">
                     <a href="#financing-panel-1" class="button button-large-green" onclick="$('#financing-panels a[href=\'#financing-panel-1\']').click()">
                       <span class="inner-stroke">
                         <h3>How Much</h3><h1>Can I Afford?</h1>
@@ -1302,7 +1375,7 @@
                     </a>
                   </div>
 
-                  <div class="small-3 columns text-center">
+                  <div class="small-6 columns text-left">
                     <a href="#financing-panel-2" class="button button-large-green" onclick="$('#financing-panels a[href=\'#financing-panel-2\']').click()">
                       <span class="inner-stroke">
                         <h3>Help With</h3><h1>Credit Scores</h1>
@@ -1421,7 +1494,7 @@
 
           <div class="tabs-panel is-active" id="home-buying-panel-1">
 
-            <div class="row">
+            <div class="row hide-sm">
 
               <div class="small-12">
                 <img src="img/svg/arrow_three_to_one_left.svg">
@@ -1456,7 +1529,7 @@
                 </div>
               </div>
 
-              <div class="row flex">
+              <div class="row flex gallery-area">
 
                 <div class="small-3 columns">
                   <div class="mortgage-payment-tile gray-box">
@@ -1498,8 +1571,8 @@
                   </a>
 
                 </div>
-                <div class="small-12">
-                  <img src="img/svg/arrow_two_to_one_bottom.svg">
+                <div class="small-12 hide-sm">
+                  <img src="img/svg/arrow_two_to_one_bottom.svg" class="hide-sm">
                 </div>
 
               </div>
@@ -1522,7 +1595,9 @@
                     </div>
                     <div class="small-6 columns end">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                      <div>
                       <a data-open="schedule-consultation-modal" class="button"><span class="inner-stroke">Schedule Consult</span></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1557,15 +1632,15 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row hide-sm">
                 <div class="small-12 columns">
                   <img src="img/svg/arrow_one_to_two.svg">
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row responsive-buttons">
 
-                <div class="small-3 columns text-center small-offset-3">
+                <div class="small-6 columns text-right">
                   <a href="#financing-panel-2" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#home-buying-panel-2\']').click()">
                     <span class="inner-stroke">
                       <h3>Construction</h3><h1>Process</h1>
@@ -1573,7 +1648,7 @@
                   </a>
                 </div>
 
-                <div class="small-3 columns text-center">
+                <div class="small-6 columns text-left">
                   <a href="#financing-panel-3" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#home-buying-panel-3\']').click()">
                     <span class="inner-stroke">
                       <h3>Tips On</h3><h1>Moving</h1>
@@ -1694,7 +1769,9 @@
                     </div>
                     <div class="small-6 columns end">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                      <div>
                       <a data-open="schedule-consultation-modal" class="button"><span class="inner-stroke">Schedule Consult</span></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1730,15 +1807,15 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row hide-sm">
                 <div class="small-12 columns">
                   <img src="img/svg/arrow_one_to_two.svg">
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row responsive-buttons">
 
-                <div class="small-3 columns text-center small-offset-3">
+                <div class="small-6 columns text-right">
                   <a href="#financing-panel-1" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#home-buying-panel-1\']').click()">
                     <span class="inner-stroke">
                       <h3>Designing</h3><h1>Your Home</h1>
@@ -1746,7 +1823,7 @@
                   </a>
                 </div>
 
-                <div class="small-3 columns text-center">
+                <div class="small-6 columns text-left">
                   <a href="#financing-panel-3" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#home-buying-panel-3\']').click()">
                     <span class="inner-stroke">
                       <h3>Tips On</h3><h1>Moving</h1>
@@ -1848,7 +1925,9 @@
                     </div>
                     <div class="small-6 columns end">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                      <div>
                       <a data-open="schedule-consultation-modal" class="button"><span class="inner-stroke">Schedule Consult</span></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1884,15 +1963,15 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row hide-sm">
                 <div class="small-12 columns">
                   <img src="img/svg/arrow_one_to_two.svg">
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row responsive-buttons">
 
-                <div class="small-3 columns text-center small-offset-3">
+                <div class="small-6 columns text-right">
                   <a href="#financing-panel-1" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#home-buying-panel-1\']').click()">
                     <span class="inner-stroke">
                       <h3>Designing</h3><h1>Your Home</h1>
@@ -1900,7 +1979,7 @@
                   </a>
                 </div>
 
-                <div class="small-3 columns text-center">
+                <div class="small-6 columns text-left">
                   <a href="#financing-panel-2" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#home-buying-panel-2\']').click()">
                     <span class="inner-stroke">
                       <h3>Construction</h3><h1>Process</h1>
@@ -2004,7 +2083,7 @@
             <!-- BENEFITS NEW HOME PANEL 1 - RENT VS OWN -->
             <div class="tabs-panel is-active" id="benefits-new-home-panel-1">
 
-              <div class="row">
+              <div class="row hide-sm">
                 <div class="small-12">
                   <img src="img/svg/arrow_three_to_one_left.svg">
                 </div>
@@ -2251,7 +2330,11 @@
                     </div>
                     <div class="small-6 columns end">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                      
+                      <div>
                       <a data-open="schedule-consultation-modal" class="button"><span class="inner-stroke">Schedule Consult</span></a>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -2287,15 +2370,15 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row hide-sm">
                 <div class="small-12 columns">
                   <img src="img/svg/arrow_one_to_two.svg">
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row responsive-buttons">
 
-                <div class="small-3 columns text-center small-offset-3">
+                <div class="small-6 columns text-right">
                   <a href="#benefits-new-home-panel-2" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#benefits-new-home-panel-2\']').click()">
                     <span class="inner-stroke">
                       <h3>New</h3><h1>Vs. Used</h1>
@@ -2303,7 +2386,7 @@
                   </a>
                 </div>
 
-                <div class="small-3 columns text-center">
+                <div class="small-6 columns text-left">
                   <a href="#benefits-new-home-panel-3" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#benefits-new-home-panel-3\']').click()">
                     <span class="inner-stroke">
                       <h3>Sustainable</h3><h1>By Design</h1>
@@ -2570,7 +2653,9 @@
                       </div>
                       <div class="small-6 columns end">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                        <div>
                         <a data-open="schedule-consultation-modal" class="button" aria-controls="schedule-consultation-modal" aria-haspopup="true" tabindex="0"><span class="inner-stroke">Schedule Consult</span></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2606,15 +2691,15 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row hide-sm">
                   <div class="small-12 columns">
                     <img src="img/svg/arrow_one_to_two.svg">
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row responsive-buttons">
 
-                  <div class="small-3 columns text-center small-offset-3">
+                  <div class="small-6 columns text-right">
                     <a href="#benefits-new-home-panels-1" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#benefits-new-home-panel-1\']').click()">
                       <span class="inner-stroke">
                         <h3>Rent vs</h3><h1>Own</h1>
@@ -2622,7 +2707,7 @@
                     </a>
                   </div>
 
-                  <div class="small-3 columns text-center">
+                  <div class="small-6 columns text-left">
                     <a href="#benefits-new-home-panels-3" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#benefits-new-home-panel-3\']').click()">
                       <span class="inner-stroke">
                         <h3>Sustainable by</h3><h1>Design</h1>
@@ -2722,7 +2807,9 @@
                       </div>
                       <div class="small-6 columns end">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+                        <div>
                         <a data-open="schedule-consultation-modal" class="button" aria-controls="schedule-consultation-modal" aria-haspopup="true" tabindex="0"><span class="inner-stroke">Schedule Consult</span></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2758,15 +2845,15 @@
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row hide-sm">
                 <div class="small-12 columns">
                   <img src="img/svg/arrow_one_to_two.svg">
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row responsive-buttons">
 
-                <div class="small-3 columns text-center small-offset-3">
+                <div class="small-6 columns text-right">
                   <a href="#benefits-new-home-panels-1" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#benefits-new-home-panel-1\']').click()">
                     <span class="inner-stroke">
                       <h3>Rent vs</h3><h1>Own</h1>
@@ -2774,7 +2861,7 @@
                   </a>
                 </div>
 
-                <div class="small-3 columns text-center">
+                <div class="small-6 columns text-left">
                   <a href="#benefits-new-home-panels-2" class="button button-large-green" onclick="$('#home-buying-panels a[href=\'#benefits-new-home-panel-2\']').click()">
                     <span class="inner-stroke">
                       <h3>New vs</h3><h1>Used</h1>
