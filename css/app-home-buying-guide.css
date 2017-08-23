@@ -56,7 +56,7 @@
 	font-style: normal;
 }
 
-body, .tabs-content {color: #666666; overflow-x: hidden;}
+body, .tabs-content {color: #666666;}
 
 .btn-chat {
 	text-align: center;
@@ -140,7 +140,7 @@ body, .tabs-content {color: #666666; overflow-x: hidden;}
     background: none;
 }
 .tabs-panel {
-	padding: 0;
+	padding-top: 0;
 }
 .tabs-panel .row ul.tabs {
 	display: -webkit-box;
@@ -651,7 +651,7 @@ footer {
 	font-size: 1.15rem;
 	margin: 0 auto;
 }
-.step-intro {
+.tabs-panel {
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
 	animation: fadein 2s;
 }
@@ -955,7 +955,7 @@ footer {
 	color: #555555;
 }
 .style-by-design .svg {
-	width: 220px;
+	max-width: 220px;
 	margin-bottom: 20px;
 }
 .style-by-design .flex {
@@ -1367,6 +1367,10 @@ a:hover .svg-hover {
 	position: relative;
 	top: 8px;
 	z-index: 1;
+	margin-left: auto;
+    margin-right: auto;
+    display: table;
+    max-width: 90%;
 }
 .arrow-large-down-green {
 	width: 40px;
@@ -1923,7 +1927,7 @@ below and at ipad following applies
 	.circle-stroke-gray
 	{display: none;}
 
-	.tabs-content {margin-top: 30px;}
+	.tabs-content {margin-top: 80px;}
 	#location-tiles .medium-6 {margin-bottom: 30px;}
 	.return-home {margin-top: 30px;}
 
@@ -1959,7 +1963,7 @@ below and at ipad following applies
 	.benefits-new-home .row ul.tabs, 
 	#home-buying-panels .tabs-title, 
 	.tabs-panel .row ul.tabs
-	{display: block !important;}
+	{display: block !important; max-width: 360px; margin-left: auto; margin-right: auto;}
 
 	.row .impact {margin: 0; width: 100%;}
 
@@ -1972,9 +1976,9 @@ below and at ipad following applies
 
 	.gallery-area {display: table; margin-top: 20px;}
 	.gallery-area .small-3, .gallery-area .small-6, .gallery-area .small-12 {width: 100%; float: none; clear: both; display: table !important; text-align: center;}
-	.style-by-design .svg {width: auto;}
+	.style-by-design .svg {width: auto; max-width: 75%; margin-left: auto; margin-right: auto;}
 	
-	.style-by-design .button-large-green {margin-top: 20px;}
+	.style-by-design .button-large-green {margin-top: 20px; width: 100%;max-width: 100%;}
 	
 	.small-responsive {clear: both; max-width: 200px; display: inline-block;}
 	.full-at-small {clear: both; width: 100%; float: none; text-align: center;}
